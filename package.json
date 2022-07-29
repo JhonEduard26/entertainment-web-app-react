@@ -16,6 +16,24 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.0",
+    "sass": "^1.54.0",
     "vite": "^3.0.0"
-  }
+  },
+  "description": "",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JhonEduard26/entertainment-web-app-react.git"
+  },
+  "keywords": [
+    "movies",
+    "react",
+    "vite"
+  ],
+  "author": "Jhon Eduard Bocanegra <jhon.bocanegra26@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JhonEduard26/entertainment-web-app-react/issues"
+  },
+  "homepage": "https://github.com/JhonEduard26/entertainment-web-app-react#readme"
 }

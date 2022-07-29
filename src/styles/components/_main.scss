@@ -1,0 +1,21 @@
+.header {
+  display: grid;
+  align-items: center;
+  height: 52px;
+  padding: 0 24px;
+  background-color: $secondary;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__ul {
+  display: flex;
+  column-gap: 24px;
+}
+
+.header__account {
+  cursor: pointer;
+}

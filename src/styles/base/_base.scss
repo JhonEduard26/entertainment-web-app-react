@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $body-font;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $background;
+  color: $paragraph
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+ul {
+  list-style: none;
+}
