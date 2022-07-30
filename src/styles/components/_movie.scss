@@ -55,6 +55,7 @@
 // * Recommended
 
 .recommended {
+  margin-bottom: 24px;
   padding: 0 24px;
 }
 
@@ -87,4 +88,59 @@
 .recommended__list .moviecard__year,
 .recommended__list .moviecard__rated {
   color: $paragraph;
+}
+
+// * Categories
+
+.category {
+  margin-bottom: 32px;
+  padding: 0 24px;
+}
+
+.category__title {
+  margin-bottom: 24px;
+}
+
+.category__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 12px;
+}
+
+.category__color {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.category__inner-container {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+
+#category1 {
+  background-color: $category-1;
+}
+
+#category2 {
+  background-color: $category-2;
+}
+
+#category3 {
+  background-color: $category-3;
+}
+
+#category4 {
+  background-color: $category-4;
+}
+
+#category5 {
+  background-color: $category-5;
+}
+
+#category6 {
+  background-color: $category-6;
 }
