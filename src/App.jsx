@@ -3,6 +3,7 @@ import { Search } from "./components/ui/Search"
 import { Trending } from "./components/movie/Trending"
 import { Recommended } from "./components/movie/Recommended"
 import { Category } from "./components/movie/Category"
+import { Footer } from "./components/ui/Footer"
 
 export const App = () => {
   return (
@@ -12,6 +13,7 @@ export const App = () => {
       <Trending />
       <Recommended />
       <Category />
+      <Footer />
     </div>
   )
 }

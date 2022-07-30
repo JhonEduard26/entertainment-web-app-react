@@ -44,3 +44,16 @@
 .search__input:focus {
   border-bottom: 1px solid $head-line;
 }
+
+// * Footer
+
+footer {
+  height: 72px;
+  padding: 12px 24px;
+  background-color: $head-line;
+  color: $main;
+}
+
+footer p {
+  font-size: 1.4rem;
+}
