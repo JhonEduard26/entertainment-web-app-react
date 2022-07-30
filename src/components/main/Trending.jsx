@@ -6,8 +6,8 @@ export const Trending = ({ movies }) => {
       <h2 className="trending__title">Trending</h2>
       <div className="trending__slider">
         {
-          movies.map(movie => (
-            <MovieCard />
+          movies.map((movie, idx) => (
+            <MovieCard key={idx} />
           ))
         }
       </div>
