@@ -1,6 +1,6 @@
-import { Header } from "./components/main/Header"
-import { Search } from "./components/main/Search"
-import { Trending } from "./components/main/Trending"
+import { Header } from "./components/ui/Header"
+import { Search } from "./components/ui/Search"
+import { Trending } from "./components/movie/Trending"
 
 export const App = () => {
   return (
