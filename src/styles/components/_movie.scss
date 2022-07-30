@@ -1,6 +1,7 @@
 // * Trending
 
 .trending {
+  margin-bottom: 32px;
   padding: 0 24px;
 }
 
@@ -49,4 +50,41 @@
 .moviecard__movie-name {
   color: $main;
   font-size: 1.6rem;
+}
+
+// * Recommended
+
+.recommended {
+  padding: 0 24px;
+}
+
+.recommended__title {
+  margin-bottom: 24px;
+}
+
+.recommended__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.recommended__list .moviecard {
+  margin-bottom: 12px;
+}
+
+.recommended__list .moviecard__img {
+  width: 100%;
+}
+
+.recommended__list .moviecard__details-container {
+  position: static;
+}
+
+.recommended__list .moviecard__movie-name {
+  color: $head-line;
+}
+
+.recommended__list .moviecard__year,
+.recommended__list .moviecard__rated {
+  color: $paragraph;
 }
