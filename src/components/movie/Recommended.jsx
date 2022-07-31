@@ -18,6 +18,9 @@ export const Recommended = () => {
               release={movie.release_date}
               image={movie.poster_path}
               isAdult={movie.adult}
+              rated={movie.vote_average}
+              overview={movie.overview}
+              genres={movie.genre_ids}
             />
           ))
         }

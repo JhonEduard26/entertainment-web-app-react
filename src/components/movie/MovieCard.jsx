@@ -1,10 +1,25 @@
-import { generatePath } from "react-router-dom"
+import { useDispatch } from "react-redux"
+import { useNavigate } from "react-router-dom"
+import { setMovieActive } from "../../store/slices/movieSlice"
 
+export const MovieCard = ({ id, title, release, isAdult, image, overview, rated, genres }) => {
 
-export const MovieCard = ({ id, title, release, isAdult, image }) => {
+  const dispatch = useDispatch()
+
+  const navigate = useNavigate()
 
   const handleClick = (e) => {
-    console.log(id)
+    dispatch(setMovieActive({
+      id,
+      title,
+      release,
+      isAdult,
+      image,
+      overview,
+      rated,
+      genres,
+    }))
+    navigate(`/${id}`)
   }
 
   return (

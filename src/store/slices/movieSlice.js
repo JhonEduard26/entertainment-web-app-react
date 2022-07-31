@@ -5,6 +5,7 @@ const initialState = {
   categories: [],
   recommendedMovies: [],
   series: [],
+  movieActive: null,
 }
 
 export const movieSlice = createSlice({
@@ -22,8 +23,17 @@ export const movieSlice = createSlice({
     },
     setTvSeries: (state, action) => {
       state.series = action.payload
-    }
+    },
+    setMovieActive: (state, action) => {
+      state.movieActive = action.payload
+    },
   }
 })
 
-export const { setMovies, setRecommendedMovies, setCategories, setTvSeries } = movieSlice.actions
+export const {
+  setMovies,
+  setRecommendedMovies,
+  setCategories,
+  setTvSeries,
+  setMovieActive
+} = movieSlice.actions

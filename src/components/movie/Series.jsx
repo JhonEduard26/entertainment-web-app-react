@@ -28,6 +28,9 @@ export const Series = () => {
                 image={serie.poster_path}
                 release={serie.first_air_date}
                 title={serie.original_name}
+                rated={serie.vote_average}
+                overview={serie.overview}
+                genres={serie.genre_ids}
               />
             ))
           }
