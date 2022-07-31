@@ -1,8 +1,13 @@
 
 
 export const MovieCard = ({ title, release, isAdult, image }) => {
+
+  const handleClick = (e) => {
+    console.log(e.target)
+  }
+
   return (
-    <div className="moviecard">
+    <div className="moviecard" onClick={handleClick}>
       <figure className="moviecard__img-container">
         <img
           className="moviecard__img"

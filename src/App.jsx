@@ -6,7 +6,7 @@ import { Category } from "./components/movie/Category"
 import { Footer } from "./components/ui/Footer"
 import { useEffect } from "react"
 import { useDispatch } from "react-redux"
-import { getCategories, getTrendingMovies } from "./store/slices/thunks"
+import { getCategories, getRecommendedMovies, getTrendingMovies } from "./store/slices/thunks"
 
 export const App = () => {
 
@@ -14,6 +14,7 @@ export const App = () => {
 
   useEffect(() => {
     dispatch(getTrendingMovies())
+    dispatch(getRecommendedMovies())
     dispatch(getCategories())
   }, [])
 
