@@ -13,6 +13,7 @@ export const Recommended = () => {
           recommendedMovies.map(movie => (
             <MovieCard
               key={movie.id}
+              id={movie.id}
               title={movie.original_title}
               release={movie.release_date}
               image={movie.poster_path}

@@ -1,9 +1,10 @@
+import { generatePath } from "react-router-dom"
 
 
-export const MovieCard = ({ title, release, isAdult, image }) => {
+export const MovieCard = ({ id, title, release, isAdult, image }) => {
 
   const handleClick = (e) => {
-    console.log(e.target)
+    console.log(id)
   }
 
   return (

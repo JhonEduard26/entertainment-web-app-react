@@ -1,5 +1,5 @@
 import { movieApi } from "../../api/movieApi"
-import { setCategories, setMovies, setRecommendedMovies } from "./movieSlice"
+import { setCategories, setMovies, setRecommendedMovies, setTvSeries } from "./movieSlice"
 import { setLoading } from "./uiSlice"
 
 export const getTrendingMovies = () => {
@@ -26,5 +26,8 @@ export const getCategories = () => {
 }
 
 export const getTvSeries = () => {
-
+  return async (dispatch) => {
+    const { data: { results } } = await movieApi.get('tv/popular')
+    dispatch(setTvSeries(results))
+  }
 }

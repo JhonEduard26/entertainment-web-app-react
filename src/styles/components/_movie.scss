@@ -19,6 +19,7 @@
 .moviecard {
   cursor: pointer;
   position: relative;
+  margin-bottom: 24px;
 }
 
 // * Moviecard
@@ -197,4 +198,38 @@
 
 #category37 {
   background-color: #ffbe0b;
+}
+
+// * Series
+
+.series {
+  margin-bottom: 32px;
+  padding: 0 24px;
+}
+
+.series__title {
+  margin-bottom: 24px;
+}
+
+.series__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.series__container .moviecard__img {
+  width: 100%;
+}
+
+.series__container .moviecard__details-container {
+  position: static;
+}
+
+.series__container .moviecard__movie-name {
+  color: $head-line;
+}
+
+.series__container .moviecard__year,
+.series__container .moviecard__rated {
+  color: $paragraph;
 }

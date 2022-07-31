@@ -21,6 +21,7 @@ export const Trending = () => {
                 release={movie.release_date}
                 image={movie.backdrop_path}
                 isAdult={movie.adult}
+                id={movie.id}
               />
             ))
         }

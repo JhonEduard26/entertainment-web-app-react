@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import logo from '../../assets/icons/movie.svg'
 import home from '../../assets/icons/home.svg'
 import movies from '../../assets/icons/film.svg'
@@ -11,23 +12,23 @@ export const Header = () => {
         <img src={logo} alt="" />
         <ul className='header__ul'>
           <li>
-            <a href="#">
-              <img src={home} alt="" />
-            </a>
+            <Link to={'/'}>
+              <img src={home} alt="home" />
+            </Link>
           </li>
           <li>
-            <a href="#">
-              <img src={movies} alt="" />
-            </a>
+            <Link to={'/movies'}>
+              <img src={movies} alt="movies" />
+            </Link>
           </li>
           <li>
-            <a href="#">
-              <img src={series} alt="" />
-            </a>
+            <Link to={'/series'}>
+              <img src={series} alt="series" />
+            </Link>
           </li>
         </ul>
         <img className='header__account' src={account} alt="" />
       </nav>
-    </header>
+    </header >
   )
 }
