@@ -17,11 +17,13 @@ export const Trending = () => {
             : movies.map((movie) => (
               <MovieCard
                 key={movie.id}
-                title={movie.original_title}
-                release={movie.release_date}
+                genres={movie.genre_ids}
+                id={movie.id}
                 image={movie.backdrop_path}
                 isAdult={movie.adult}
-                id={movie.id}
+                overview={movie.overview}
+                release={movie.release_date}
+                title={movie.original_title}
               />
             ))
         }

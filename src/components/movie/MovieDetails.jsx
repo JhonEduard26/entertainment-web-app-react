@@ -1,11 +1,19 @@
 import { useSelector, useDispatch } from 'react-redux'
 import { Header } from '../ui/Header'
 import { Footer } from '../ui/Footer'
+import { useEffect } from 'react'
+import { getSimilarMovies } from '../../store/slices/thunks'
+import { MovieCard } from './MovieCard'
 
 export const MovieDetails = () => {
 
+  const dispatch = useDispatch()
   const { movieActive } = useSelector(state => state.movies)
+  const { similarMovies } = useSelector(state => state.movies)
 
+  useEffect(() => {
+    dispatch(getSimilarMovies(movieActive.id))
+  }, [])
 
 
 
@@ -33,6 +41,28 @@ export const MovieDetails = () => {
           {movieActive.genres}
         </span>
         <h4 className='moviedetails__similar-title'>Similar movies</h4>
+        <div className='moviedetails__similar-movies-container'>
+          {
+            similarMovies.map((movie, idx) => {
+              if (idx < 5) {
+                return (
+                  <MovieCard
+                    key={movie.id}
+                    id={movie.id}
+                    title={movie.title}
+                    release={movie.release_date}
+                    isAdult={movie.isAdult}
+                    image={movie.poster_path}
+                    overview={movie.overview}
+                    rated={movie.rated}
+                    genres={movie.genres}
+                  />
+                )
+              }
+            }
+            )
+          }
+        </div>
       </div>
       <Footer />
     </>
