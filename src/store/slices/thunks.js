@@ -11,6 +11,15 @@ export const getTrendingMovies = () => {
   }
 }
 
+export const getMovieByCategory = (id) => {
+  return async (dispatch) => {
+    dispatch(setLoading())
+    const { data: { results } } = await movieApi.get(`discover/movie?with_genres=${id}`)
+    dispatch(setMovies(results))
+    dispatch(setLoading())
+  }
+}
+
 export const getRecommendedMovies = () => {
   return async (dispatch) => {
     const { data: { results } } = await movieApi.get('discover/movie?sort_by=popularity.desc')

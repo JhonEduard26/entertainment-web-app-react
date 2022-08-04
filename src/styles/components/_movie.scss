@@ -288,3 +288,19 @@
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 24px;
 }
+
+// * Category movie
+
+.categorymovie {
+  margin-bottom: 32px;
+  padding: 0 24px;
+}
+
+.categorymovie .category__item {
+  cursor: default;
+  margin-bottom: 24px;
+}
+
+.categorymovie .category__name {
+  font-size: 1.6rem;
+}

@@ -1,6 +1,4 @@
 import { useSelector, useDispatch } from 'react-redux'
-import { Header } from '../ui/Header'
-import { Footer } from '../ui/Footer'
 import { useEffect } from 'react'
 import { getSimilarMovies } from '../../store/slices/thunks'
 import { MovieCard } from './MovieCard'
@@ -19,7 +17,6 @@ export const MovieDetails = () => {
 
   return (
     <>
-      <Header />
       <div className='moviedetails'>
         <figure className='moviedetails__img-container'>
           <img
@@ -64,7 +61,6 @@ export const MovieDetails = () => {
           }
         </div>
       </div>
-      <Footer />
     </>
   )
 }

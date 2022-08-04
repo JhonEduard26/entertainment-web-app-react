@@ -1,11 +1,10 @@
-import { Header } from "./components/ui/Header"
+import { useEffect } from "react"
+import { useDispatch } from "react-redux"
+
 import { Search } from "./components/ui/Search"
 import { Trending } from "./components/movie/Trending"
 import { Recommended } from "./components/movie/Recommended"
 import { Category } from "./components/movie/Category"
-import { Footer } from "./components/ui/Footer"
-import { useEffect } from "react"
-import { useDispatch } from "react-redux"
 import { getCategories, getRecommendedMovies, getTrendingMovies } from "./store/slices/thunks"
 
 export const App = () => {
@@ -21,12 +20,10 @@ export const App = () => {
 
   return (
     <div className="App">
-      <Header />
       <Search />
       <Trending />
       <Recommended />
       <Category />
-      <Footer />
     </div>
   )
 }
