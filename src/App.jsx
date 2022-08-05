@@ -19,11 +19,11 @@ export const App = () => {
 
 
   return (
-    <div className="App">
+    <>
       <Search />
       <Trending />
       <Recommended />
       <Category />
-    </div>
+    </>
   )
 }

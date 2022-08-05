@@ -2,10 +2,12 @@ import { useNavigate } from "react-router-dom"
 
 export const CategoryCard = ({ name, id }) => {
 
+  const nameFix = name.replace(' ', '')
+
   const navigate = useNavigate()
 
   const handleClick = () => {
-    navigate(`/categories/${id}-${name}`)
+    navigate(`/categories/${id}-${nameFix}`)
   }
 
   return (
