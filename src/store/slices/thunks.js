@@ -20,6 +20,13 @@ export const getMovieByCategory = (id) => {
   }
 }
 
+export const getMovieById = (id) => {
+  return async (dispatch) => {
+    const { data } = await movieApi.get(`movie/${id}`)
+    dispatch(setMovies([data]))
+  }
+}
+
 export const getRecommendedMovies = () => {
   return async (dispatch) => {
     const { data: { results } } = await movieApi.get('discover/movie?sort_by=popularity.desc')
