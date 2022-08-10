@@ -6,6 +6,7 @@ const initialState = {
   recommendedMovies: [],
   series: [],
   similarMovies: [],
+  totalResults: 0,
 }
 
 export const movieSlice = createSlice({
@@ -27,6 +28,9 @@ export const movieSlice = createSlice({
     setSimilarMovies: (state, action) => {
       state.similarMovies = action.payload
     },
+    setTotalResults: (state, action) => {
+      state.totalResults = action.payload
+    },
   }
 })
 
@@ -36,4 +40,5 @@ export const {
   setCategories,
   setTvSeries,
   setSimilarMovies,
+  setTotalResults
 } = movieSlice.actions

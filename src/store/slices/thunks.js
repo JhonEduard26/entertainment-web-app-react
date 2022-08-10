@@ -1,5 +1,5 @@
 import { movieApi } from "../../api/movieApi"
-import { setCategories, setMovies, setRecommendedMovies, setSimilarMovies, setTvSeries } from "./movieSlice"
+import { setCategories, setMovies, setRecommendedMovies, setSimilarMovies, setTotalResults, setTvSeries } from "./movieSlice"
 import { setLoading } from "./uiSlice"
 
 export const getTrendingMovies = () => {
@@ -24,6 +24,14 @@ export const getMovieById = (id) => {
   return async (dispatch) => {
     const { data } = await movieApi.get(`movie/${id}`)
     dispatch(setMovies([data]))
+  }
+}
+
+export const getMovieByName = (query) => {
+  return async (dispatch) => {
+    const { data } = await movieApi.get(`search/movie?query=${query}`)
+    dispatch(setTotalResults(data.total_results))
+    dispatch(setMovies(data.results))
   }
 }
 

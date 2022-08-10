@@ -8,9 +8,8 @@ export const Search = () => {
   const handleSearch = (e) => {
     if (e.key === 'Enter') {
       console.log('Enter key pressed')
-      navigate(`/search=${e.target.value}`)
+      navigate(`/search/${e.target.value}`)
     }
-    // console.log(e.target.value)
   }
 
   return (
