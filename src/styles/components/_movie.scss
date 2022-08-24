@@ -22,6 +22,7 @@
   position: relative;
   margin-bottom: 24px;
 }
+
 // * Moviecard
 
 .moviecard__img {
@@ -120,6 +121,10 @@
   display: flex;
   align-items: center;
   column-gap: 8px;
+}
+
+.category .category__name:hover {
+  color: darken($color: $white, $amount: 25);
 }
 
 
@@ -238,23 +243,25 @@
 }
 
 .moviedetails__img-container {
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 }
 
-.moviedetails__img-container img {
-  border-radius: 8px;
+.moviedetails__img {
+  width: 100%;
+  border-radius: 6px;
 }
 
 .moviedetails__text-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  justify-content: space-around;
+  max-width: 500px;
+  height: 60px;
 }
 
 .moviedetails__title {
-  margin-bottom: 12px;
-  font-size: 1.6rem;
-  color: $white;
+  font-size: 2.4rem;
 }
 
 .moviedetails__rated {
@@ -262,19 +269,30 @@
 }
 
 .moviedetails__overview {
-  margin-bottom: 12px;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 36px;
   font-size: 1.2rem;
+  color: darken($color: $white, $amount: 25);
 }
 
 .moviedetails__genres {
   margin-bottom: 12px;
+  font-size: 1.8rem;
+}
+
+.moviedetails__genres-container {
+  margin-bottom: 36px;
+}
+
+.moviedetails__genres-names {
+  margin-right: 6px;
   font-size: 1.4rem;
-  color: $white;
 }
 
 .moviedetails__similar-title {
-  font-size: 1.4rem;
   margin-bottom: 12px;
+  font-size: 1.8rem;
 }
 
 .moviedetails__similar-movies-container {
