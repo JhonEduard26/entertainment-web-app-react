@@ -5,6 +5,7 @@
   margin-bottom: 24px;
   padding: 0 24px;
   background-color: $secondary;
+  border-bottom: 1px solid darken($color: $secondary, $amount: 10);
 }
 
 .header__nav {
@@ -28,8 +29,11 @@
   grid-template-columns: auto 1fr;
   align-items: center;
   column-gap: 24px;
-  margin-bottom: 24px;
-  padding: 0 24px;
+  margin: 0 12px;
+  margin-bottom: 36px;
+  padding: 0 12px;
+  background-color: darken($color: $secondary, $amount: 5);
+  color: $white;
 }
 
 .search__input {
@@ -39,10 +43,11 @@
   outline: 0;
   font-size: 1.6rem;
   background: none;
+  color: $white;
 }
 
-.search__input:focus {
-  border-bottom: 1px solid $head-line;
+.search__input::placeholder {
+  color: darken($color: $white, $amount: 10);
 }
 
 // * Footer
@@ -50,8 +55,6 @@
 footer {
   height: 72px;
   padding: 12px 24px;
-  background-color: $head-line;
-  color: $main;
 }
 
 footer p {
@@ -71,7 +74,7 @@ footer p {
   height: 48px;
   border-radius: 50%;
   display: inline-block;
-  border-top: 3px solid $highlight;
+  border-top: 3px solid lighten($color: $primary, $amount: 20);
   border-right: 3px solid transparent;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
@@ -99,7 +102,7 @@ footer p {
   outline: 0;
   background-color: $button;
   font-size: 1.6rem;
-  color: $main;
+  color: $white;
 }
 
 .button:hover {

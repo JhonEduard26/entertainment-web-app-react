@@ -10,8 +10,8 @@ html {
 }
 
 body {
-  background-color: $background;
-  color: $paragraph
+  background-image: $background-body;
+  color: $white
 }
 
 h1 {
@@ -20,7 +20,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  color: $head-line
+  color: $white;
 }
 
 ul {
