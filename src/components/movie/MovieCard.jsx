@@ -4,7 +4,7 @@ export const MovieCard = ({ id, title, release, isAdult, image, overview, rated,
   const navigate = useNavigate()
 
   const handleClick = () => {
-    navigate(`/movies/${id}`)
+    navigate(`movies/${id}`)
   }
 
   return (

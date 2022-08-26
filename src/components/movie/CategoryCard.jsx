@@ -7,7 +7,7 @@ export const CategoryCard = ({ name, id }) => {
   const navigate = useNavigate()
 
   const handleClick = () => {
-    navigate(`/categories/${id}-${nameFix}`)
+    navigate(`categories/${id}-${nameFix}`)
   }
 
   return (

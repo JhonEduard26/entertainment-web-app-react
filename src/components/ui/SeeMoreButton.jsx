@@ -6,7 +6,7 @@ export const SeeMoreButton = () => {
   const navigate = useNavigate()
 
   const handleClick = () => {
-    navigate('/movies')
+    navigate('movies')
   }
 
   return (
