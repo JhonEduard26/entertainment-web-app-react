@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { useDispatch, useSelector } from 'react-redux'
-import { getTvSeries } from "../../store/slices/thunks"
+import { getTvSeries } from "@store/slices/thunks"
 import { MovieCard } from "./MovieCard"
 
 export const Series = () => {

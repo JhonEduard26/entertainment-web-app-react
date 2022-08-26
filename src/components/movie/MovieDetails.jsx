@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
-import { getMovieById, getSimilarMovies } from "../../store/slices/thunks";
+import { getMovieById, getSimilarMovies } from "@store/slices/thunks";
 import { MovieCard } from "./MovieCard";
 import { useParams } from "react-router-dom";
 

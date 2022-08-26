@@ -1,11 +1,11 @@
 import { useEffect } from "react"
 import { useDispatch } from "react-redux"
 
-import { Search } from "./components/ui/Search"
-import { Trending } from "./components/movie/Trending"
-import { Recommended } from "./components/movie/Recommended"
-import { Category } from "./components/movie/Category"
-import { getCategories, getRecommendedMovies, getTrendingMovies } from "./store/slices/thunks"
+import { Search } from "@components/ui/Search"
+import { Trending } from "@components/movie/Trending"
+import { Recommended } from "@components/movie/Recommended"
+import { Category } from "@components/movie/Category"
+import { getCategories, getRecommendedMovies, getTrendingMovies } from "@store/slices/thunks"
 
 export const App = () => {
 

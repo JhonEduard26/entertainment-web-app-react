@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import { useParams } from "react-router-dom"
 import { useDispatch, useSelector } from 'react-redux'
 import { Search } from "../ui/Search"
-import { getMovieByName } from "../../store/slices/thunks"
+import { getMovieByName } from "@store/slices/thunks"
 import { MovieCard } from "./MovieCard"
 
 export const SearchPage = () => {
