@@ -13,12 +13,12 @@ export const AppRouter = () => {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="series" element={<Series />} />
-        <Route path="movies" element={<Movies />} />
-        <Route path="movies/:id" element={<MovieDetails />} />
-        <Route path="categories/:id" element={<CategoryMovie />} />
-        <Route path="search/:query" element={<SearchPage />} />
+        <Route path="./" element={<App />} />
+        <Route path="./series" element={<Series />} />
+        <Route path="./movies" element={<Movies />} />
+        <Route path="./movies/:id" element={<MovieDetails />} />
+        <Route path="./categories/:id" element={<CategoryMovie />} />
+        <Route path="./search/:query" element={<SearchPage />} />
         <Route path="*" element={<h1>Error 404</h1>} />
       </Routes>
       <Footer />
