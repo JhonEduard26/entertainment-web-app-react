@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import { useDispatch, useSelector } from 'react-redux'
-import { getTvSeries } from "@store/slices/thunks"
-import { MovieCard } from "./MovieCard"
+import { getTvSeries } from "../../store/slices/thunks"
+import { SerieCard } from "./SerieCard"
 
 export const Series = () => {
 
@@ -19,12 +19,12 @@ export const Series = () => {
         <div className="series__container">
           {
             series.map(serie => (
-              <MovieCard
+              <SerieCard
                 key={serie.id}
                 id={serie.id}
                 image={serie.poster_path}
                 release={serie.first_air_date}
-                title={serie.original_name}
+                name={serie.name}
                 rated={serie.vote_average}
                 overview={serie.overview}
                 genres={serie.genre_ids}

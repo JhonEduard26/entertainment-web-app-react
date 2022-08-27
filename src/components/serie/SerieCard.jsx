@@ -1,10 +1,10 @@
 import { useNavigate } from 'react-router-dom'
-export const MovieCard = ({ id, title, release, isAdult, image, overview, rated, genres }) => {
+export const SerieCard = ({ id, name, release, isAdult, image, overview, rated, genres }) => {
 
   const navigate = useNavigate()
 
   const handleClick = () => {
-    navigate(`/movies/${id}`)
+    navigate(`/series/${id}`)
   }
 
   return (
@@ -13,7 +13,7 @@ export const MovieCard = ({ id, title, release, isAdult, image, overview, rated,
         <img
           className="moviecard__img"
           src={`https://image.tmdb.org/t/p/w300${image}`}
-          alt={title}
+          alt={name}
         />
       </figure>
       <div className="moviecard__details-container">
@@ -21,7 +21,7 @@ export const MovieCard = ({ id, title, release, isAdult, image, overview, rated,
           <span className="moviecard__year">{new Date(release).getFullYear() || ''}</span>
           <span className="moviecard__rated" >{isAdult && '18+'}</span>
         </div>
-        <span className="moviecard__movie-name" >{title}</span>
+        <span className="moviecard__movie-name" ></span>
       </div>
     </div>
   )

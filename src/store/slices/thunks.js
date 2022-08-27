@@ -62,3 +62,10 @@ export const getTvSeries = () => {
     dispatch(setTvSeries(results))
   }
 }
+
+export const getTvSerieById = (id) => {
+  return async (dispatch) => {
+    const { data } = await movieApi.get(`tv/${id}`)
+    dispatch(setTvSeries([data]))
+  }
+}

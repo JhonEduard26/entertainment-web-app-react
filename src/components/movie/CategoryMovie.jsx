@@ -1,16 +1,16 @@
-import { useEffect } from 'react'
-import { useParams } from 'react-router-dom'
-import { useSelector, useDispatch } from 'react-redux'
-import { getMovieByCategory } from '../../store/slices/thunks'
-import { Loader } from '../ui/Loader'
-import { MovieCard } from './MovieCard'
+import { useEffect } from "react"
+import { useParams } from "react-router-dom"
+import { useSelector, useDispatch } from "react-redux"
+import { getMovieByCategory } from "../../store/slices/thunks"
+import { Loader } from "../ui/Loader"
+import { MovieCard } from "./MovieCard"
 
 export const CategoryMovie = () => {
 
 
   const { id } = useParams()
 
-  const [idCategory, name] = id.split('-')
+  const [idCategory, name] = id.split("-")
 
   const { isLoading } = useSelector(state => state.ui)
   const dispatch = useDispatch()

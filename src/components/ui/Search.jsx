@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import search from "@assets/icons/search.svg";
+import search from "../../assets/icons/search.svg"
 
 export const Search = () => {
   const navigate = useNavigate();
