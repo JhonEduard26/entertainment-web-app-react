@@ -24,21 +24,22 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - See trending movies
 - See recommended movies
-- Tv series page
 - Movie categories
 - Movie detail card
+- Tv series page
+- Tv serie detail card
 - (SOON) auth and characters page
 
 ### Screenshots
 
-- Soon
-  ![]()
-  ![]()
+![movies](./src/assets/screenshots/movies.png)
+  
+![series](./src/assets/screenshots/series.png)
 
 ### Links
 
 - Solution URL: [GitHub](https://github.com/JhonEduard26/entertainment-web-app-react)
-- Live Site URL: [GitHub Pages]()
+- Live Site URL: [GitHub Pages](https://jhoneduard26.github.io/entertainment-web-app-react/)
 
 ## My process
 
