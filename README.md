@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/JhonEduard26/entertainment-web-app-react)
-- Live Site URL: [GitHub Pages](https://jhoneduard26.github.io/entertainment-web-app-react/)
+- Live Site URL: [Netlify](https://entertainment-web-app-jhon.netlify.app/)
 
 ## My process
 
