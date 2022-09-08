@@ -11,7 +11,7 @@ import { SerieDetails } from "../components/serie/SerieDetails"
 
 export const AppRouter = () => {
   return (
-    <BrowserRouter basename="entertainment-web-app-react">
+    <BrowserRouter>
       <Header />
       <Routes>
         <Route index element={<App />} />

@@ -6,6 +6,6 @@ export const movieApi = axios.create({
     'Content-Type': 'application/json'
   },
   params: {
-    'api_key': import.meta.env.VITE_API_KEY
+    'api_key': '30e44eee0d6c8912ae4cd9074baba1e3'
   }
 })
