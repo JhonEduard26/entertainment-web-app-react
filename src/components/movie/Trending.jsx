@@ -1,10 +1,10 @@
-import { useSelector } from "react-redux";
-import { Loader } from "../ui/Loader";
-import { MovieCard } from "./MovieCard";
+import { useSelector } from "react-redux"
+import { Loader } from "../ui/Loader"
+import { MovieCard } from "./"
 
 export const Trending = () => {
-  const { movies } = useSelector((state) => state.movies);
-  const { isLoading } = useSelector((state) => state.ui);
+  const { movies } = useSelector((state) => state.movies)
+  const { isLoading } = useSelector((state) => state.ui)
 
   return (
     <section className="trending">
@@ -28,5 +28,5 @@ export const Trending = () => {
         )}
       </div>
     </section>
-  );
-};
+  )
+}

@@ -1,22 +1,22 @@
-import { useSelector, useDispatch } from "react-redux";
-import { useEffect } from "react";
-import { getMovieById, getSimilarMovies } from "../../store/slices/thunks";
-import { MovieCard } from "./MovieCard";
-import { useParams } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux"
+import { useEffect } from "react"
+import { useParams } from "react-router-dom"
+import { getMovieById, getSimilarMovies } from "../../store/slices/thunks"
+import { MovieCard } from "./"
 
 export const MovieDetails = () => {
-  const { id } = useParams();
+  const { id } = useParams()
 
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
 
   useEffect(() => {
     dispatch(getMovieById(id));
-    dispatch(getSimilarMovies(id));
+    dispatch(getSimilarMovies(id))
   }, [id]);
 
   const { similarMovies, movies } = useSelector((state) => state.movies);
 
-  const [movie] = movies;
+  const [movie] = movies
 
   return (
     <div className="moviedetails">
@@ -54,10 +54,10 @@ export const MovieDetails = () => {
                 rated={movie.rated}
                 genres={movie.genres}
               />
-            );
+            )
           }
         })}
       </div>
     </div>
-  );
-};
+  )
+}

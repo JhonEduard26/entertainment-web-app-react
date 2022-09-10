@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { getTvSerieById } from "../../store/slices/thunks";
-import { SerieCard } from "./SerieCard";
+// import { SerieCard } from "./SerieCard";
 import { useParams } from "react-router-dom";
 
 export const SerieDetails = () => {

@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
 import { SeeMoreButton } from '../ui/SeeMoreButton'
-import { MovieCard } from "./MovieCard"
+import { MovieCard } from "./"
 
 export const Recommended = () => {
 
